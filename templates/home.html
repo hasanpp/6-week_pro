@@ -1,0 +1,23 @@
+<style>
+    *{
+        color: #0dcaf0;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: #0dcaf0;
+        font-size: 27px;
+        padding-top: 5px;
+        border-radius: 22px;
+        padding-bottom: 5px;
+    }
+</style>
+<br><br><br><br><br>
+{% if user %}
+    <h1 style="text-align: center;">Hey, Welcome Mr/Mrs {{ user.username }}</h1>
+{% endif %}
+<br><br>
+<center><span class=""><a href="{% url 'signout' %}">Sign out</a></span></center>
+
